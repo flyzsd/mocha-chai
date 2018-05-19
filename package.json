@@ -4,7 +4,8 @@
   "description": "mocha with chai",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 --check-leaks 'test/**/*.spec.js'"
+    "test": "mocha --timeout 10000 --check-leaks 'test/**/*.spec.js'",
+    "e2e": "mocha --timeout 10000 --check-leaks 'e2e/**/*.spec.js'"
   },
   "repository": {
     "type": "git",
