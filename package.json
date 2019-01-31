@@ -4,8 +4,9 @@
   "description": "mocha with chai",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 --check-leaks 'test/**/*.spec.js'",
-    "e2e": "mocha --timeout 10000 --check-leaks 'e2e/**/*.spec.js'"
+    "test": "mocha --timeout 10000 --check-leaks test/**/*.spec.js",
+    "e2e": "mocha --timeout 10000 --check-leaks e2e/**/*.spec.js",
+    "ts-test": "mocha --timeout 10000 --check-leaks --require ts-node/register ts-test/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,11 @@
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.20",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "puppeteer": "^1.11.0"
+    "puppeteer": "^1.11.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
   }
 }
